@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baro.dev | Developer & Automation Specialist</title>
+    <meta name="description" content="baro - Creating websites, bots, automated trading bots, and WhatsApp solutions. Professional developer for hire.">
+    <link rel="canonical" href="https://baro.dev">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>baro<span class="logo-bracket">/&gt;</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for projects
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Building</span>
+                <span class="title-line highlight">Digital</span>
+                <span class="title-line">Experiences</span>
+            </h1>
+            <p class="hero-subtitle">
+                I create <span class="typing-text"></span><span class="cursor">|</span>
+            </p>
+            <p class="hero-description">
+                Professional developer specializing in websites, automation bots, trading algorithms, and WhatsApp business solutions. Transforming ideas into powerful digital products.
+            </p>
+            <div class="hero-cta">
+                <a href="#work" class="btn btn-primary">
+                    View My Work
+                    <i data-lucide="arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    Get In Touch
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="50">0</span>+
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="30">0</span>+
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="5">0</span>+
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <div class="image-glow"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-years">5+</span>
+                        <span class="exp-text">Years of<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3 class="about-heading">
+                        Crafting digital solutions that <span class="text-gradient">make an impact</span>
+                    </h3>
+                    <p class="about-paragraph">
+                        I'm baro, a passionate developer who thrives on turning complex problems into elegant solutions. With expertise spanning web development, automation, and bot creation, I help businesses streamline their operations and establish a powerful digital presence.
+                    </p>
+                    <p class="about-paragraph">
+                        From building responsive websites that captivate audiences to developing sophisticated trading bots that execute strategies with precision, every project is an opportunity to push boundaries and deliver exceptional value.
+                    </p>
+                    <div class="about-skills">
+                        <div class="skill-tag">Web Development</div>
+                        <div class="skill-tag">Bot Automation</div>
+                        <div class="skill-tag">Trading Algorithms</div>
+                        <div class="skill-tag">WhatsApp API</div>
+                        <div class="skill-tag">Full Stack</div>
+                        <div class="skill-tag">API Integration</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Services</h2>
+            </div>
+            <div class="services-grid">
+                <!-- Website Development -->
+                <div class="service-card" data-service="websites">
+                    <div class="service-icon">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <h3 class="service-title">Website Development</h3>
+                    <p class="service-description">
+                        Custom, responsive websites built with modern technologies. From landing pages to complex web applications, I create digital experiences that convert visitors into customers.
+                    </p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check"></i> Responsive Design</li>
+                        <li><i data-lucide="check"></i> SEO Optimized</li>
+                        <li><i data-lucide="check"></i> Fast Performance</li>
+                        <li><i data-lucide="check"></i> CMS Integration</li>
+                    </ul>
+                    <div class="service-hover">
+                        <span>Learn More</span>
+                        <i data-lucide="arrow-up-right"></i>
+                    </div>
+                </div>
+
+                <!-- Bot Development -->
+                <div class="service-card" data-service="bots">
+                    <div class="service-icon">
+                        <i data-lucide="bot"></i>
+                    </div>
+                    <h3 class="service-title">Bot Development</h3>
+                    <p class="service-description">
+                        Intelligent automation bots that handle repetitive tasks, manage customer interactions, and streamline your business operations 24/7 without human intervention.
+                    </p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check"></i> Custom Bot Logic</li>
+                        <li><i data-lucide="check"></i> Multi-Platform</li>
+                        <li><i data-lucide="check"></i> AI Integration</li>
+                        <li><i data-lucide="check"></i> Analytics Dashboard</li>
+                    </ul>
+                    <div class="service-hover">
+                        <span>Learn More</span>
+                        <i data-lucide="arrow-up-right"></i>
+                    </div>
+                </div>
+
+                <!-- Trading Bots -->
+                <div class="service-card featured" data-service="trading">
+                    <div class="service-badge">Popular</div>
+                    <div class="service-icon">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h3 class="service-title">Trading Bots</h3>
+                    <p class="service-description">
+                        Algorithmic trading solutions that execute strategies with precision. Automate your trades across crypto, forex, and stock markets with custom-built algorithms.
+                    </p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check"></i> Strategy Backtesting</li>
+                        <li><i data-lucide="check"></i> Risk Management</li>
+                        <li><i data-lucide="check"></i> Real-time Execution</li>
+                        <li><i data-lucide="check"></i> Exchange Integration</li>
+                    </ul>
+                    <div class="service-hover">
+                        <span>Learn More</span>
+                        <i data-lucide="arrow-up-right"></i>
+                    </div>
+                </div>
+
+                <!-- WhatsApp Solutions -->
+                <div class="service-card" data-service="whatsapp">
+                    <div class="service-icon">
+                        <i data-lucide="message-circle"></i>
+                    </div>
+                    <h3 class="service-title">WhatsApp Solutions</h3>
+                    <p class="service-description">
+                        WhatsApp Business API integration for customer support, marketing campaigns, and automated messaging. Connect with your audience on their favorite platform.
+                    </p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check"></i> API Integration</li>
+                        <li><i data-lucide="check"></i> Bulk Messaging</li>
+                        <li><i data-lucide="check"></i> Chat Automation</li>
+                        <li><i data-lucide="check"></i> CRM Integration</li>
+                    </ul>
+                    <div class="service-hover">
+                        <span>Learn More</span>
+                        <i data-lucide="arrow-up-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work/Projects Section -->
+    <section class="work" id="work">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Selected Work</h2>
+            </div>
+            <div class="work-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="websites">Websites</button>
+                <button class="filter-btn" data-filter="bots">Bots</button>
+                <button class="filter-btn" data-filter="trading">Trading</button>
+                <button class="filter-btn" data-filter="whatsapp">WhatsApp</button>
+            </div>
+            <div class="work-grid">
+                <!-- Project 1 -->
+                <div class="work-card" data-category="websites">
+                    <div class="work-image">
+                        <div class="work-placeholder">
+                            <i data-lucide="layout"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <a href="#" class="work-link">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <span class="work-category">E-Commerce Website</span>
+                        <h3 class="work-title">LuxStore Platform</h3>
+                        <p class="work-description">A premium e-commerce platform with seamless checkout experience and inventory management.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="work-card" data-category="trading">
+                    <div class="work-image">
+                        <div class="work-placeholder trading-bg">
+                            <i data-lucide="candlestick-chart"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <a href="#" class="work-link">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <span class="work-category">Trading Bot</span>
+                        <h3 class="work-title">CryptoScalp Pro</h3>
+                        <p class="work-description">High-frequency crypto trading bot with advanced risk management and real-time analytics.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="work-card" data-category="whatsapp">
+                    <div class="work-image">
+                        <div class="work-placeholder whatsapp-bg">
+                            <i data-lucide="messages-square"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <a href="#" class="work-link">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <span class="work-category">WhatsApp Bot</span>
+                        <h3 class="work-title">ShopAssist WA</h3>
+                        <p class="work-description">E-commerce assistant bot for WhatsApp with order tracking and customer support automation.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="work-card" data-category="bots">
+                    <div class="work-image">
+                        <div class="work-placeholder bot-bg">
+                            <i data-lucide="cpu"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <a href="#" class="work-link">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <span class="work-category">Automation Bot</span>
+                        <h3 class="work-title">TaskFlow AI</h3>
+                        <p class="work-description">Intelligent task automation system with NLP capabilities and workflow optimization.</p>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="work-card" data-category="websites">
+                    <div class="work-image">
+                        <div class="work-placeholder">
+                            <i data-lucide="briefcase"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <a href="#" class="work-link">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <span class="work-category">Corporate Website</span>
+                        <h3 class="work-title">Nexus Consulting</h3>
+                        <p class="work-description">Professional consulting firm website with interactive elements and lead generation focus.</p>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="work-card" data-category="trading">
+                    <div class="work-image">
+                        <div class="work-placeholder trading-bg">
+                            <i data-lucide="line-chart"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <a href="#" class="work-link">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <span class="work-category">Forex Bot</span>
+                        <h3 class="work-title">ForexMaster EA</h3>
+                        <p class="work-description">Expert Advisor for MetaTrader with multi-currency support and custom indicator integration.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="work-cta">
+                <a href="#contact" class="btn btn-outline">
+                    Start Your Project
+                    <i data-lucide="arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">How I Work</h2>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Discovery</h3>
+                        <p>Understanding your goals, requirements, and vision through detailed consultation.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Strategy</h3>
+                        <p>Planning the technical architecture and creating a roadmap for development.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Development</h3>
+                        <p>Building your solution with clean code, regular updates, and best practices.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Delivery</h3>
+                        <p>Testing, deployment, and ongoing support to ensure everything runs smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Client Feedback</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "baro built our trading bot and it has exceeded all expectations. The ROI has been incredible and the support is top-notch."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Marcus Chen</span>
+                            <span class="author-role">Crypto Trader</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The WhatsApp automation solution transformed our customer service. Response times dropped by 80% and customer satisfaction soared."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Sarah Williams</span>
+                            <span class="author-role">E-commerce Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Professional, skilled, and delivers on time. Our new website has increased leads by 150%. Highly recommended!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">David Park</span>
+                            <span class="author-role">Agency CEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="section-header">
+                        <span class="section-number">06</span>
+                        <h2 class="section-title">Let's Work Together</h2>
+                    </div>
+                    <p class="contact-description">
+                        Have a project in mind? Let's create something amazing together. I'm always open to discussing new opportunities.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:hi@baro.dev">hi@baro.dev</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Response Time</span>
+                                <span>Within 24 hours</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Location</span>
+                                <span>Remote / Worldwide</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="message-circle"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">WhatsApp</span>
+                                <a href="https://wa.me/2348169927034?text=Hi%20baro,%20I'm%20interested%20in%20your%20services!" target="_blank">+234 816 992 7034</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Telegram">
+                            <i data-lucide="send"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="website">Website Development</option>
+                                <option value="bot">Bot Development</option>
+                                <option value="trading">Trading Bot</option>
+                                <option value="whatsapp">WhatsApp Solution</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Send Message
+                            <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <a href="#" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>baro<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-tagline">Building the future, one line of code at a time.</p>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2025 baro.dev. All rights reserved.
+                </p>
+                <div class="footer-links">
+                    <a href="#hero">Back to top</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i data-lucide="check-circle"></i>
+        <span>Message sent successfully!</span>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/2348169927034?text=Hi%20baro,%20I'm%20interested%20in%20your%20services!" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
